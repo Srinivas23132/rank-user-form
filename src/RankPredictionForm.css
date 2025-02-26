@@ -1,0 +1,261 @@
+/***********************************
+ * Outer Container (Frame 19)
+ ***********************************/
+ .form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 72px;
+  gap: 52px;
+
+  position: absolute;
+  width: 644px;
+  height: 653.4px;
+  left: 732px;
+  top: calc(50% - 653.4px/2 + 74.7px);
+
+  background: #ffffff;
+  border: 1.4px solid rgba(22, 50, 105, 0.14);
+  box-shadow:
+    -12px 61px 25px rgba(22, 50, 105, 0.01),
+    -7px 35px 21px rgba(22, 50, 105, 0.02),
+    -3px 15px 16px rgba(22, 50, 105, 0.03),
+    -1px 4px 9px rgba(22, 50, 105, 0.04);
+  border-radius: 12px;
+
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/***********************************
+ * Gray Pill (Slider)
+ ***********************************/
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* EXACT width/height from Figma */
+  width: 497px;
+  height: 67.4px;
+
+  background: rgba(22, 50, 105, 0.16);
+  border-radius: 160px;
+}
+
+/***********************************
+ * Blue Pill (Slider Inner)
+ ***********************************/
+.slider-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* EXACT width/height from Figma */
+  width: 473px;
+  height: 50px;
+
+  background: #163269;
+  border-radius: 63.33px;
+}
+
+.slider-text {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+/***********************************
+ * Form Content (Frame 20)
+ ***********************************/
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  width: 500px;
+  height: 467.4px;
+}
+
+/***********************************
+ * Input Field Base
+ ***********************************/
+.input-field-base {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  width: 500px;
+  height: 80px;
+}
+
+.input-label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+  color: #161b2d;
+}
+
+.required-star {
+  color: red;
+}
+
+/***********************************
+ * Input Wrapper
+ ***********************************/
+ .input-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 500px;
+  height: 44px;
+  background: #ffffff;
+
+  /* Use a subtle, light border */
+  /* border: 3px solid #e3e3e3; */
+
+  
+  box-shadow:none;
+  border-radius: 4px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 75%;
+  border: 3px solid #e3e3e3;
+  border-radius: 7px;
+  outline: none;
+  padding: 10px 14px;
+  font-size: 16px;
+  color: #161B2D; 
+
+}
+
+.input-wrapper input::placeholder {
+  color: #bfbfbf;
+}
+
+
+/***********************************
+ * Radio Group
+ ***********************************/
+.radio-group-base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+
+  width: 500px;
+  height: 64px;
+}
+
+.radio-group-label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+  color: #161b2d;
+}
+
+.radio-options-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 500px;
+  height: 28px;
+}
+
+/***********************************
+ * Radio Button Styling
+ ***********************************/
+.radio-option {
+  display: flex;
+  align-items: center;
+}
+
+.radio-option input[type='radio'] {
+  appearance: none;
+  width: 22.4px;
+  height: 22.4px;
+  background: #ffffff;
+  border: 1.4px solid #163269;
+  border-radius: 168px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.radio-option input[type='radio']:checked {
+  border: 5.6px solid #163269;
+  box-shadow: 0px 1px 12px rgba(255, 78, 89, 0.08);
+}
+
+.radio-label-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: #161b2d;
+}
+
+/***********************************
+ * Buttons (Frame 9)
+ ***********************************/
+.form-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 46px;
+  gap: 32px;
+
+  width: 463px;
+  height: 54px;
+}
+
+/***********************************
+ * Clear Button (Underlined Text)
+ ***********************************/
+.clear-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  width: 179px;
+  height: 54px;
+  padding: 12px 40px;
+
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 100%;
+  text-align: center;
+  color: rgba(22, 27, 45, 0.72);
+}
+
+/***********************************
+ * Get Results Button (Dark Pill)
+ ***********************************/
+.results-btn {
+  background: #161b2d;
+  border-radius: 80px;
+  border: none;
+  cursor: pointer;
+
+  width: 208px;
+  height: 54px;
+  padding: 12px 40px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 100%;
+  text-align: center;
+  color: #ffffff;
+}
